@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>JukeBox</title>
+  </head>
+  <body>
+
+    <div class="songList">
+      <p>Bee's JukeBox</p>
+      <div class="iconsBar">
+        <img src="icons/playButton.png" alt="Play Button" onclick="jukebox.play()">
+        <img src="icons/pauseButton.png" alt="Pause Button" onclick="jukebox.pause()">
+        <img src="icons/stop1.png" alt="Stop Button" onclick="jukebox.stop()">
+        <img src="icons/nextButton.png" alt="Next Button" onclick="jukebox.next()">
+      </div>
+      <ul>
+        <li onclick="jukebox.playsong(0)">Track 1: Michael McAchern - "Gone"</li>
+        <li onclick="jukebox.playsong(1)">Track 2: Omonoko - "Noelle"</li>
+        <li onclick="jukebox.playsong(2)">Track 3: Tom Orlando - "X-Hale"</li>
+      </ul>
+    </div>
+    <audio id="audioTag" src="songs/song1.mp3"></audio>
+
+  <script src="main.js"></script>
+  </body>
+</html>
